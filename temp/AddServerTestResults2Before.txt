@@ -1,0 +1,148 @@
+Consistent Hash
+Max Num Servers: 100
+Num Replicas Per Servers: 2
+Circular List Length: 400
+Num Servers In Collection: 5
+Server 0
+Replicas:
+Replica 0945a74b-dd36-4a80-9db2-af6a775283c1
+Circular List Index 90
+Client Id db8139a5-acd4-4132-b252-65ab01ddeff9
+Client Id 2fd7b6c3-2b46-409e-8b72-e8bcfbc841da
+Client Id 50bc7753-d2fe-471e-b386-cadae3e7dc75
+Client Id c7d7dd57-ba9c-49ba-825d-d26fbc21e56b
+Client Id c29a9264-53e1-42db-aacd-8d3c7c891946
+Client Id 78fb483b-3e62-46f2-9001-a4d87ce7720e
+Client Id a49af5fa-f26a-4111-b03e-56e94876a849
+Client Id c57bd4b8-95ca-4ec2-9075-161d7db6a741
+
+Replica 20bd79cb-e809-4c5d-a3e4-99809be44efe
+Circular List Index 248
+Client Id 08bab7a6-c302-4599-8570-4ce05afe1d28
+Client Id 71f8eacc-57df-434f-8d12-236e2bf8c5e5
+Client Id 3887aa07-7949-483d-9042-6a84024f512f
+Client Id d4b5e212-51d2-4d1c-a69a-f54d3ded0797
+Client Id e5bd4993-6475-4dfd-886d-be54e8b3a5b9
+Client Id ffad381f-631b-4dc4-b832-4ecf41816038
+Client Id 48d1fd0b-b406-449b-919e-12560b5c7d0c
+Client Id c1035b30-ab20-4e31-aadd-4d1ec688fa50
+Client Id 8916ca1b-dccc-4680-98fe-a6ef5d7f0f32
+Client Id 3ec1457d-67d8-47ce-96ea-1d1c5debe211
+Client Id 13c6c8cb-fd74-4fc2-b133-82e3f4199857
+Client Id edce7663-bb2f-496f-8266-e36e49c07d9b
+Client Id bccc3c09-36e3-4c99-8715-2332da2cce91
+Client Id c3d53001-448e-49ba-be51-14b7ef8c648f
+Client Id 1cd05ab9-f529-4be3-ad84-01b48e7053dd
+Client Id 8bf78cb2-09f5-461f-aac7-bc5a3def07e8
+Client Id 7c0c9bae-45c4-428e-9236-808c85257698
+Client Id 720734f5-77a0-4050-9805-774b874622d6
+Client Id 6f50243f-b249-49a5-a45e-257d050bf2c2
+Client Id 5908370c-2e5f-4f04-adb2-43592b34e8ce
+Client Id 79766799-520b-4d32-b490-fd2a8cb1c635
+Client Id 56c17869-bde6-4fcd-a658-5f3502a8b64e
+Client Id dc5a5e76-dbcc-4f8e-91a0-9b19a77b230d
+Client Id 4767885b-ec80-429b-aff7-d4a28e0963fd
+Client Id 93b6f4e1-423d-4a40-9d46-c2e07135ffe7
+Client Id aa141856-72e3-4088-871d-0f6ef4c71413
+Client Id c70a0cba-88c6-47eb-8a9a-a571e2eeaf48
+Client Id 96b7e2f3-b1db-49c6-b8ea-dc0f23826cfb
+Client Id 7fc71e2f-3157-49f5-8f66-8a606e130077
+Client Id 9b16a188-8e90-48ab-82c3-8c3b1b6ba302
+Client Id b699b45a-668e-486e-a2c6-c36738f7d310
+Client Id 40036b45-7948-41fc-bc1d-9b00c051ae79
+Client Id 766cc5f9-1acf-402c-ac80-872586fc1e5f
+
+
+Server 1
+Replicas:
+Replica d5858f72-fa33-4a5e-9ff6-7573abeffaec
+Circular List Index 16
+Client Id 425ee7fb-9f87-40b8-979a-a9b804e9240b
+Client Id e76960f8-2413-4b0b-9de4-8542244622a1
+Client Id 6438618a-783b-4fdb-a4ed-1646b3ffd1a9
+Client Id e4f06dff-532f-44b8-93a9-fde98088bbfc
+Client Id 46c8d258-7d5a-4dce-9043-7bf4cd12928d
+
+Replica 340ed76f-e74b-4c4d-a59f-ed3292c136f1
+Circular List Index 67
+Client Id 17c23462-a0cc-44a3-ad18-f641f61e75c3
+Client Id b9f87743-f8be-4f4f-9b8b-8faba4702b7d
+Client Id ca46e824-924d-44d7-b8d6-beba27b76f06
+Client Id 037c5e40-b23b-48df-bfa7-d99926c1b9fb
+Client Id 922c1ef7-c569-4964-bf90-654211ee585b
+Client Id 28a56b99-6591-452e-af63-7374d298cb78
+Client Id 2659db33-d4c6-4d06-9249-650cc9ce54fd
+Client Id 2c85d378-53fb-4e73-bdf9-465832d35fea
+Client Id 9465a69e-bb8e-46a0-bb1d-725357146dcb
+Client Id 30f5cd91-0a68-4e62-9f2b-420d5a8e4105
+Client Id 9a5bdfcc-80c1-4279-90b8-6c0295ad0c67
+Client Id b4173893-6999-4b4b-af79-a0a44a9f0999
+Client Id e0133c70-8d0f-446c-8b96-3a016b2e6b95
+
+
+Server 2
+Replicas:
+Replica 0734f5af-2870-4b93-9dc9-dfd2339a69c0
+Circular List Index 116
+Client Id a0a3ebca-76d4-4a77-ac22-a3ebd582e349
+Client Id 63c0af40-e2ed-4ba8-bef8-d1f687d95b67
+
+Replica 4532c60c-889d-4607-90a4-f7a0fc8afd07
+Circular List Index 108
+Client Id c9cb3019-f1ef-4d23-a6a6-d57359967e57
+Client Id e3a8780a-f8a1-42d4-9408-43f9f42c03c2
+
+
+Server 3
+Replicas:
+Replica e260c1e1-d041-47bb-a5c7-05bfd9ea2f07
+Circular List Index 365
+Client Id 5d295c88-2854-4b78-9b46-b97d1dc0ea49
+Client Id c95d5303-f8dd-410f-b8d0-d93ff2a0c72d
+Client Id 5227e010-be4e-479b-8ee1-808ce91ddbf0
+Client Id 1b34b406-964a-4af3-b964-1206d8bc0e00
+Client Id 15d6901c-69f3-485e-b60d-c1597071c496
+Client Id 358e5efa-b44f-4fde-9956-62fba22de8a3
+Client Id 9013fe1e-f2c5-4b6a-839f-18d297b41fe7
+Client Id 83c36e0a-116c-4cce-987e-e296b3eca872
+Client Id 46aaed67-667d-4ab7-b41b-f215dae95e0e
+Client Id 48f1221e-44a5-49a0-8310-139c4899c102
+Client Id 6095ae59-24c7-4caf-95c0-ceef46c75973
+Client Id 43d0482d-8f0d-4ffb-8f58-a99c794d9d31
+Client Id c4d8f9f3-2b3f-4d25-86e2-11ccfd2a2185
+Client Id efb88e21-d57d-4220-97ac-eb850e6d8f50
+Client Id 2cc6770a-5563-4c01-ae7f-b1520760a219
+Client Id d19d678c-be46-46ac-b1f4-dcf61743361b
+Client Id a2a4e42f-b1bd-44ab-a30f-e604b47a5914
+Client Id e05fe3b7-b2bc-40fc-82ad-76a4465f0cda
+Client Id 628a7eaf-77a9-4877-8525-afe546c5bac2
+Client Id 4eba93fa-7249-40ca-af98-3892b2cd30fa
+Client Id a2d2b5ed-610b-45d5-9994-09057a9731e9
+Client Id 69047fc0-34a9-439f-b309-392e50634d79
+Client Id da738a6d-107a-456c-ac93-18ac3ebedf3b
+Client Id 3d2fc84e-24d2-453c-9ce0-a485e9c16b04
+Client Id b4c4d787-2e31-45ab-9f25-afdcffb6dae0
+
+Replica d2e0fe83-60c0-4c38-b567-c1e883823be3
+Circular List Index 249
+
+
+Server 4
+Replicas:
+Replica 8be9bb23-e992-451b-8d33-ef8511b967f8
+Circular List Index 96
+Client Id 85a27d21-d8c1-456e-93ed-6834e5d1bb7f
+Client Id f8aeb309-618c-4662-a52a-d97fe1f7a914
+Client Id 1a8cbca4-0e32-4c55-857f-ceab35ba68d0
+
+Replica f1e2a562-b740-4e94-9c81-271dd1b47101
+Circular List Index 391
+Client Id cda8cf0c-1837-4b84-b612-f26bb33b2c0a
+Client Id 8cae1a3d-08f3-4c8c-b3fd-2f6b11bdcecc
+Client Id 668a70a5-10bc-4881-8902-c946ca7da89d
+Client Id 8be1d8c6-3200-4bb3-988f-6483ce3f7ae3
+Client Id 0c998d64-9fbf-4181-a62c-49bfdda3f7cd
+Client Id 0fc32326-3c36-41fa-b7e6-85165a76131b
+Client Id 908e1a37-d24f-4332-a451-9824bef6fbce
+Client Id c63b4a55-ffdd-430e-b5eb-ca4567f872a7
+Client Id a6c86b7a-2259-4d12-b87a-b92e6b9df1fc
