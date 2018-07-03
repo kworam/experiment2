@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="ConsistentHashUnitTest.cs" />
     <Compile Include="Finbonacci\FibonacciUnitTest.cs" />
+    <Compile Include="Parens\ParensUnitTest.cs" />
     <Compile Include="Permutation\PermutationUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MinHeapUnitTest.cs" />
