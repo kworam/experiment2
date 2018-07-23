@@ -49,6 +49,7 @@
     <Compile Include="Graph\GraphType.cs" />
     <Compile Include="Parens\Parens.cs" />
     <Compile Include="Permutation\Permutation.cs" />
+    <Compile Include="Search\SearchInSortedRotatedArray.cs" />
     <Compile Include="Trie\KevinTrie.cs" />
     <Compile Include="Trie\TraversalType.cs" />
     <Compile Include="Trie\Trie.cs" />
