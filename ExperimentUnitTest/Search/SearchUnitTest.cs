@@ -49,14 +49,26 @@ namespace ExperimentUnitTest.Search
 		[TestCategory("Search"), TestMethod]
 		public void LargeArrayNotFound()
 		{
-			Assert.AreEqual(SearchInSortedRotatedArray.Search(GenerateRotatedSortedArray(length: 100, rotation: 13), val: 107), -1);
+			Assert.AreEqual(
+				SearchInSortedRotatedArray.Search(GenerateRotatedSortedArray(length: 100, rotation: 13), val: 107), 
+				-1);
 		}
 
 		[TestCategory("Search"), TestMethod]
 		public void LargeArrayFound()
 		{
-			Assert.AreEqual(SearchInSortedRotatedArray.Search(GenerateRotatedSortedArray(length: 100, rotation: 13), val: 99), (99 + 13) % 100);
-			Assert.AreEqual(SearchInSortedRotatedArray.Search(GenerateRotatedSortedArray(length: 100, rotation: 13), val: 55), (55 + 13) % 100);
+			Assert.AreEqual(SearchInSortedRotatedArray.Search(
+				GenerateRotatedSortedArray(length: 100, rotation: 13), val: 99), 
+				(99 + 13) % 100);
+			Assert.AreEqual(SearchInSortedRotatedArray.Search(
+				GenerateRotatedSortedArray(length: 100, rotation: 13), val: 54), 
+				(54 + 13) % 100);
+			Assert.AreEqual(SearchInSortedRotatedArray.Search(
+				GenerateRotatedSortedArray(length: 101, rotation: 13), val: 99),
+				(99 + 13) % 101);
+			Assert.AreEqual(SearchInSortedRotatedArray.Search(
+				GenerateRotatedSortedArray(length: 100, rotation: 13), val: 54),
+				(54 + 13) % 101);
 		}
 
 		private int[] GenerateRotatedSortedArray(int length, int rotation)
