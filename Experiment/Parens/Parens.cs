@@ -55,79 +55,137 @@ namespace Experiment.Parens
 			return maxDepth;
 		}
 
-		public static List<string> GetParensBook(int n)
+		private class RecursionCount
 		{
-			if (n < 0)
-			{
-				return null;				
-			}
-
-			List<string> result = new List<string>();
-			char[] parens = new char[n*2];
-			int index = 0;
-			GetParensBookInternal(index, parens, n, n, result);
-			return result;
+			public long count;
 		}
 
-		private static void GetParensBookInternal(
-			int index, char[] parens, int leftRemaining, int rightRemaining, List<string> result)
+		public class ParensResult
 		{
-			if (leftRemaining < 0 || rightRemaining < 0)
-			{
-				// error
-				return;
-			}
-
-			if (leftRemaining == 0 && rightRemaining == 0)
-			{
-				result.Add(new string(parens));
-				return;
-			}
-
-			parens[index] = '(';
-			GetParensBookInternal(index + 1, parens, leftRemaining - 1, rightRemaining, result);
-
-			parens[index] = ')';
-			GetParensBookInternal(index + 1, parens, leftRemaining, rightRemaining - 1, result);
+			public long recursionCount;
+			public List<string> list;
 		}
 
 
-		public static List<string> GetParensBookKevin(int n)
+		public static ParensResult GenerateParens(int count)
 		{
-			if (n < 0)
+			if (count < 0)
 			{
 				return null;
 			}
 
-			List<string> result = new List<string>();
-			char[] parens = new char[n * 2];
-			int index = 0;
-			int leftRemaining = n;
-			int rightAvailable = 0;
-			GetParensBookInternalKevin(index, parens, leftRemaining, rightAvailable, result);
-			return result;
+			RecursionCount rc = new RecursionCount();
+			char[] str = new char[count*2];
+			List<string> list = new List<string>();
+			AddParen(list, count, count, str, 0, rc);
+			return new ParensResult()
+			{
+				list = list,
+				recursionCount = rc.count
+			};
 		}
 
-		private static void GetParensBookInternalKevin(
-			int index, char[] parens, int leftRemaining, int rightAvailable, List<string> result)
+		private static void AddParen(List<string> list, 
+			int leftRem, int rightRem, char[] str, int index, RecursionCount rc)
 		{
+			rc.count++;
+
+			if (leftRem < 0 || rightRem < leftRem)
+			{
+				// invalid state
+				return;
+			}
+
+			if (leftRem == 0 && rightRem == 0)
+			{
+				list.Add(new string(str));
+				return;
+			}
+
+			str[index] = '(';
+			AddParen(list, leftRem - 1, rightRem, str, index + 1, rc);
+
+			str[index] = ')';
+			AddParen(list, leftRem, rightRem - 1, str, index + 1, rc);
+		}
+
+
+		public static ParensResult GenerateParens2Count(int count)
+		{
+			if (count < 0)
+			{
+				return null;
+			}
+
+			RecursionCount rc = new RecursionCount();
+			char[] str = new char[count * 2];
+			List<string> list = new List<string>();
+			AddParen2Count(list, count, 0, str, 0, rc);
+			return new ParensResult()
+			{
+				list = list,
+				recursionCount = rc.count
+			};
+		}
+
+		private static void AddParen2Count(List<string> list, 
+			int leftRemaining, int rightAvailable, char[] str, int index, RecursionCount rc)
+		{
+			rc.count++;
+
 			if (leftRemaining == 0 && rightAvailable == 0)
 			{
-				result.Add(new string(parens));
+				list.Add(new string(str));
 				return;
 			}
 
 			if (leftRemaining > 0)
 			{
-				parens[index] = '(';
-				GetParensBookInternalKevin(index + 1, parens, leftRemaining - 1, rightAvailable + 1, result);
+				str[index] = '(';
+				AddParen2Count(list, leftRemaining - 1, rightAvailable + 1, str, index + 1, rc);
 			}
 
 			if (rightAvailable > 0)
 			{
-				parens[index] = ')';
-				GetParensBookInternalKevin(index + 1, parens, leftRemaining, rightAvailable - 1, result);
+				str[index] = ')';
+				AddParen2Count(list, leftRemaining, rightAvailable - 1, str, index + 1, rc);
 			}
 		}
+
+		public static List<string> GenerateParens2(int count)
+		{
+			if (count < 0)
+			{
+				return null;
+			}
+
+			char[] str = new char[count * 2];
+			List<string> list = new List<string>();
+			AddParen2(list, count, 0, str, 0);
+			return list;
+		}
+
+		private static void AddParen2(List<string> list,
+			int leftRemaining, int rightAvailable, char[] str, int index)
+		{
+			if (leftRemaining == 0 && rightAvailable == 0)
+			{
+				list.Add(new string(str));
+				return;
+			}
+
+			if (leftRemaining > 0)
+			{
+				str[index] = '(';
+				AddParen2(list, leftRemaining - 1, rightAvailable + 1, str, index + 1);
+			}
+
+			if (rightAvailable > 0)
+			{
+				str[index] = ')';
+				AddParen2(list, leftRemaining, rightAvailable - 1, str, index + 1);
+			}
+		}
+
 	}
 }
