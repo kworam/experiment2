@@ -63,6 +63,7 @@
     <Compile Include="PriorityQueueUnitTest.cs" />
     <Compile Include="GraphUnitTest.cs" />
     <Compile Include="Search\SearchUnitTest.cs" />
+    <Compile Include="Sort\SortUnitTest.cs" />
     <Compile Include="TrieUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>

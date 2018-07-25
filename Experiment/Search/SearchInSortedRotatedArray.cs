@@ -8,8 +8,7 @@ namespace Experiment.Search
 		{
 			// assumption: ra is an array sorted in ascending order that has been rotated by an unknown amount
 			if (ra == null || ra.Length == 0) return -1;
-
-			int minIndex = FindMinIndex(ra);
+			int minIndex = FindMinIndex(ra, 0, ra.Length - 1);
 			return InternalSearch(ra, val, 0, ra.Length - 1, minIndex);
 		}
 
@@ -18,37 +17,23 @@ namespace Experiment.Search
 			while (start <= end)
 			{
 				int mid = (start + end) / 2;
-				int adj = (mid + offset) % ra.Length;
-				if (ra[adj] < val)
-				{
-					start = mid + 1;
-				}
-				else if (ra[adj] > val)
-				{
-					end = mid - 1;
-				}
-				else
-				{
-					return adj;
-				}
+				int adjustedMid = (mid + offset) % ra.Length;
+				if (ra[adjustedMid] < val) start = mid + 1;
+				else if (ra[adjustedMid] > val) end = mid - 1;
+				else return adjustedMid;
 			}
 
 			return -1;
 		}
 
 
-		private static int FindMinIndex(int[] ra)
-		{
-			return FindMinIndexInternal(ra, 0, ra.Length - 1);
-		}
-
-		private static int FindMinIndexInternal(int[] ra, int start, int end)
+		private static int FindMinIndex(int[] ra, int start, int end)
 		{
 			if (end == start || end == start + 1) return end;
 
 			int mid = (start + end) / 2;
-			if (ra[start] > ra[mid]) return FindMinIndexInternal(ra, start, mid);
-			if (ra[mid] > ra[end]) return FindMinIndexInternal(ra, mid, end);
+			if (ra[start] > ra[mid]) return FindMinIndex(ra, start, mid);
+			if (ra[mid] > ra[end]) return FindMinIndex(ra, mid, end);
 			return start;
 		}
 	}

@@ -58,14 +58,7 @@ namespace ExperimentUnitTest
 		    List<int> poppedValues = new List<int>();
             try
 		    {
-                int arrayLength = 1000;
-                inputArray = new int[arrayLength];
-
-                Random randomGenerator = new Random();
-                for (int i = 0; i < arrayLength; i++)
-                {
-                    inputArray[i] = randomGenerator.Next();
-                }
+				inputArray = ArrayUtility.GenerateRandomIntArray(1000);
 
                 expectedArray = inputArray.Clone() as int[];
                 // default sort puts min at the front of the sorted array

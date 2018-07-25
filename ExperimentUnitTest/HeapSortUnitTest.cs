@@ -37,14 +37,7 @@ namespace ExperimentUnitTest
         [TestCategory("HeapSort"), TestMethod]
         public void HeapSortLargeRandomArray()
         {
-            int arrayLength = 1000;
-            int[] inputArray = new int[arrayLength];
-
-            Random randomGenerator = new Random();
-            for (int i = 0; i < arrayLength; i++)
-            {
-                inputArray[i] = randomGenerator.Next();
-            }
+			int[] inputArray = ArrayUtility.GenerateRandomIntArray(1000);
 
             int[] expectedArray = inputArray.Clone() as int[];
             // default sort puts min at the front of the sorted array

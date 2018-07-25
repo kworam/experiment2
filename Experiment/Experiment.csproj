@@ -50,6 +50,7 @@
     <Compile Include="Parens\Parens.cs" />
     <Compile Include="Permutation\Permutation.cs" />
     <Compile Include="Search\SearchInSortedRotatedArray.cs" />
+    <Compile Include="Sort\Sort.cs" />
     <Compile Include="Trie\KevinTrie.cs" />
     <Compile Include="Trie\TraversalType.cs" />
     <Compile Include="Trie\Trie.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="QuickSort\QuickSortKevinPartition.cs" />
     <Compile Include="QuickSort\QuickSortStatistics.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

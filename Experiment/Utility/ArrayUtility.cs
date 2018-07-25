@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Experiment
 {
@@ -46,5 +47,20 @@ namespace Experiment
 			array[index1] = array[index2];
 			array[index2] = tmp;
 		}
-	}
+
+	    public static int[] GenerateRandomIntArray(int arrayLength, int? maxValue = null)
+	    {
+		    int[] result = new int[arrayLength];
+
+		    Random randomGenerator = new Random();
+		    for (int i = 0; i < arrayLength; i++)
+		    {
+			    result[i] = maxValue.HasValue
+				    ? randomGenerator.Next(maxValue.Value)
+				    : randomGenerator.Next();
+		    }
+
+			return result;
+	    }
+    }
 }

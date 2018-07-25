@@ -37,14 +37,7 @@ namespace ExperimentUnitTest
         [TestCategory("QuickSort"), TestMethod]
         public void QuickSortLargeRandomArray()
         {
-			int arrayLength = 1000;
-			int[] inputArray = new int[arrayLength];
-
-			Random randomGenerator = new Random();
-			for (int i = 0; i < arrayLength; i++)
-			{
-				inputArray[i] = randomGenerator.Next(maxValue: 20);
-			}
+	        int[] inputArray = ArrayUtility.GenerateRandomIntArray(arrayLength: 1000, maxValue: 20);
 
 			int[] expectedArray = inputArray.Clone() as int[];
             // default sort puts min at the front of the sorted array
@@ -57,14 +50,7 @@ namespace ExperimentUnitTest
 		[TestCategory("QuickSort"), TestMethod]
 		public void QuickSortComparePartitionArrayFuncs()
 		{
-			int arrayLength = 10000;
-			int[] inputArrayClassic = new int[arrayLength];
-
-			Random randomGenerator = new Random();
-			for (int i = 0; i < arrayLength; i++)
-			{
-				inputArrayClassic[i] = randomGenerator.Next(maxValue: 20);
-			}
+			int[] inputArrayClassic = ArrayUtility.GenerateRandomIntArray(arrayLength: 1000, maxValue: 20);
 
 			int[] inputArrayKevin = inputArrayClassic.Clone() as int[];
 
