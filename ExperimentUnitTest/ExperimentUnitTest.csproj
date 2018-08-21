@@ -52,8 +52,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="CCI_Hard\CCI_Hard_UnitTest.cs" />
+    <Compile Include="CCI_Moderate\CCI_Moderate_UnitTest.cs" />
     <Compile Include="ConsistentHashUnitTest.cs" />
     <Compile Include="Finbonacci\FibonacciUnitTest.cs" />
+    <Compile Include="HackerRank\HackerRankUnitTest.cs" />
     <Compile Include="Parens\ParensUnitTest.cs" />
     <Compile Include="Permutation\PermutationUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,6 +74,17 @@
       <Project>{02ffb166-c0bb-449c-afa3-84b6cc8379c8}</Project>
       <Name>Experiment</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HackerRank\IceCreamParlor_TesCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\IceCreamParlor_TesCase0b.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\IceCreamParlor_TesCase2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CCI_Hard\AddWithoutArithmeticOperators.cs" />
+    <Compile Include="CCI_Moderate\NumberSwap.cs" />
     <Compile Include="Fibonacci\Fibonacci.cs" />
     <Compile Include="Graph\CyclicGraphException.cs" />
     <Compile Include="Graph\GraphDijkstraShortestPath.cs" />
@@ -47,8 +49,10 @@
     <Compile Include="Graph\GraphTopologicalSort.cs" />
     <Compile Include="Graph\GraphTopologicalSortNode.cs" />
     <Compile Include="Graph\GraphType.cs" />
+    <Compile Include="HackerRank\IceCreamParlor.cs" />
     <Compile Include="Parens\Parens.cs" />
     <Compile Include="Permutation\Permutation.cs" />
+    <Compile Include="QuickSort\QuickSortCCI.cs" />
     <Compile Include="Search\SearchInSortedRotatedArray.cs" />
     <Compile Include="Sort\Sort.cs" />
     <Compile Include="Trie\KevinTrie.cs" />

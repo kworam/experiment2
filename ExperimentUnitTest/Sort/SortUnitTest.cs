@@ -50,6 +50,52 @@ namespace ExperimentUnitTest.Sort
 			Experiment.Sort.Sort.SortToPeaksAndValleys(a);
 		}
 
+
+		[TestCategory("Sort"), TestMethod]
+		public void NullArrayOptimal()
+		{
+			int[] a = null;
+			Experiment.Sort.Sort.SortToPeaksAndValleysOptimal(a);
+			Assert.IsNull(a);
+		}
+
+		[TestCategory("Sort"), TestMethod]
+		public void SingletonArrayOptimal()
+		{
+			int[] a = ArrayUtility.GenerateRandomIntArray(1);
+			Experiment.Sort.Sort.SortToPeaksAndValleysOptimal(a);
+			Assert.IsTrue(IsAllPeaksAndValleys(a));
+		}
+
+		[TestCategory("Sort"), TestMethod]
+		public void LengthTwoOptimal()
+		{
+			int[] a = ArrayUtility.GenerateRandomIntArray(2);
+			Experiment.Sort.Sort.SortToPeaksAndValleysOptimal(a);
+		}
+
+		[TestCategory("Sort"), TestMethod]
+		public void LengthThreeOptimal()
+		{
+			int[] a = ArrayUtility.GenerateRandomIntArray(3);
+			Experiment.Sort.Sort.SortToPeaksAndValleysOptimal(a);
+		}
+
+		[TestCategory("Sort"), TestMethod]
+		public void LargeEvenOptimal()
+		{
+			int[] a = ArrayUtility.GenerateRandomIntArray(100);
+			Experiment.Sort.Sort.SortToPeaksAndValleysOptimal(a);
+		}
+
+		[TestCategory("Sort"), TestMethod]
+		public void LargeOddOptimal()
+		{
+			int[] a = ArrayUtility.GenerateRandomIntArray(101);
+			Experiment.Sort.Sort.SortToPeaksAndValleysOptimal(a);
+		}
+
+
 		private static bool IsAllPeaksAndValleys(int[] a)
 		{
 			if (a == null || a.Length < 3) return true;

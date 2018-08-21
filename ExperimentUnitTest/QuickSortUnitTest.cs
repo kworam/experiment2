@@ -11,7 +11,7 @@ namespace ExperimentUnitTest
         public void QuickSortNullArray()
         {
             int[] a = null;
-            QuickSort.Sort(a);
+            QuickSort.Sort(a, QuickSortCCI.Partition);
             Assert.IsNull(a);
         }
 
@@ -20,7 +20,7 @@ namespace ExperimentUnitTest
         {
             int[] a = new int[0];
             int[] expectedOutput = a.Clone() as int[];
-            QuickSort.Sort(a);
+            QuickSort.Sort(a, QuickSortCCI.Partition);
             Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
         }
 
@@ -29,12 +29,80 @@ namespace ExperimentUnitTest
         {
             int[] a = new int[] { 88 };
             int[] expectedOutput = a.Clone() as int[];
-            QuickSort.Sort(a);
+            QuickSort.Sort(a, QuickSortCCI.Partition);
             Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
         }
 
 
-        [TestCategory("QuickSort"), TestMethod]
+		[TestCategory("QuickSort"), TestMethod]
+		public void QuickSortAllSameOddLength()
+		{
+			int[] a = new int[] { 1, 1, 1 };
+			int[] expectedOutput = a.Clone() as int[];
+			QuickSort.Sort(a, QuickSortCCI.Partition);
+			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+		}
+
+		[TestCategory("QuickSort"), TestMethod]
+		public void QuickSortAllSameEvenLength()
+		{
+			int[] a = new int[] { 1, 1, 1, 1 };
+			int[] expectedOutput = a.Clone() as int[];
+			QuickSort.Sort(a, QuickSortCCI.Partition);
+			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+		}
+
+		[TestCategory("QuickSort"), TestMethod]
+		public void QuickSortA()
+		{
+			int[] a = new int[] { 1, 3, 1 };
+			int[] expectedOutput = a.Clone() as int[];
+			Array.Sort(expectedOutput);
+			QuickSort.Sort(a, QuickSortCCI.Partition);
+			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+		}
+
+		[TestCategory("QuickSort"), TestMethod]
+		public void QuickSortSortedOddLength()
+		{
+			int[] a = new int[] { 1, 2, 3 };
+			int[] expectedOutput = a.Clone() as int[];
+			Array.Sort(expectedOutput);
+			QuickSort.Sort(a, QuickSortCCI.Partition);
+			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+		}
+
+		[TestCategory("QuickSort"), TestMethod]
+		public void QuickSortSortedEvenLength()
+		{
+			int[] a = new int[] { 1, 2, 3, 4 };
+			int[] expectedOutput = a.Clone() as int[];
+			Array.Sort(expectedOutput);
+			QuickSort.Sort(a, QuickSortCCI.Partition);
+			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+		}
+
+		[TestCategory("QuickSort"), TestMethod]
+		public void QuickSortReverseSortedOddLength()
+		{
+			int[] a = new int[] { 3, 2, 1 };
+			int[] expectedOutput = a.Clone() as int[];
+			Array.Sort(expectedOutput);
+			QuickSort.Sort(a, QuickSortCCI.Partition);
+			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+		}
+
+		[TestCategory("QuickSort"), TestMethod]
+		public void QuickSortReverseSortedEvenLength()
+		{
+			int[] a = new int[] { 4, 3, 2, 1 };
+			int[] expectedOutput = a.Clone() as int[];
+			Array.Sort(expectedOutput);
+			QuickSort.Sort(a, QuickSortCCI.Partition);
+			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+		}
+
+		[TestCategory("QuickSort"), TestMethod]
         public void QuickSortLargeRandomArray()
         {
 	        int[] inputArray = ArrayUtility.GenerateRandomIntArray(arrayLength: 1000, maxValue: 20);
@@ -43,7 +111,7 @@ namespace ExperimentUnitTest
             // default sort puts min at the front of the sorted array
             Array.Sort(expectedArray);
 
-            QuickSort.Sort(inputArray);
+            QuickSort.Sort(inputArray, QuickSortCCI.Partition);
             Assert.IsTrue(ArrayUtility.AreArraysEqual(inputArray, expectedArray));
         }
 
@@ -61,6 +129,10 @@ namespace ExperimentUnitTest
 			QuickSort.Sort(inputArrayKevin, QuickSortKevinPartition.PartitionArray);
 			Console.WriteLine("Kevin partition stats");
 			Console.WriteLine(QuickSort.stats);
+
+			QuickSort.Sort(inputArrayKevin, QuickSortCCI.Partition);
+			//Console.WriteLine("QuickSortCCI partition stats");
+			//Console.WriteLine(QuickSort.stats);
 		}
 	}
 }
