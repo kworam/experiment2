@@ -9,35 +9,35 @@ namespace Experiment.HackerRank
 	public class IceCreamParlor
 	{
 		// Complete the whatFlavors function below.
+		//public static void whatFlavors(int[] cost, int money)
+		//{
+		//	int[] sortedCost = cost.Clone() as int[];
+		//	Array.Sort(sortedCost);
+
+		//	for (int i = 1; i <= (money / 2); i++)
+		//	{
+		//		int aIndex = BinSearch(sortedCost, i);
+		//		if (aIndex >= 0)
+		//		{
+		//			int bIndex = BinSearch(sortedCost, money - i);
+		//			if (bIndex >= 0)
+		//			{
+		//				int aIndexOriginal = FindCost(cost, i, 0);
+		//				int bStartIndex = i == money - i ? aIndexOriginal + 1 : 0;
+		//				int bIndexOriginal = FindCost(cost, money - i, bStartIndex);
+
+		//				aIndexOriginal++;
+		//				bIndexOriginal++;
+		//				Console.WriteLine(string.Format("{0} {1}",
+		//					Math.Min(aIndexOriginal, bIndexOriginal),
+		//					Math.Max(aIndexOriginal, bIndexOriginal)));
+		//				break;
+		//			}
+		//		}
+		//	}
+		//}
+
 		public static void whatFlavors(int[] cost, int money)
-		{
-			int[] sortedCost = cost.Clone() as int[];
-			Array.Sort(sortedCost);
-
-			for (int i = 1; i <= (money / 2); i++)
-			{
-				int aIndex = BinSearch(sortedCost, i);
-				if (aIndex >= 0)
-				{
-					int bIndex = BinSearch(sortedCost, money - i);
-					if (bIndex >= 0)
-					{
-						int aIndexOriginal = FindCost(cost, i, 0);
-						int bStartIndex = i == money - i ? aIndexOriginal + 1 : 0;
-						int bIndexOriginal = FindCost(cost, money - i, bStartIndex);
-
-						aIndexOriginal++;
-						bIndexOriginal++;
-						Console.WriteLine(string.Format("{0} {1}",
-							Math.Min(aIndexOriginal, bIndexOriginal),
-							Math.Max(aIndexOriginal, bIndexOriginal)));
-						break;
-					}
-				}
-			}
-		}
-
-		public static void whatFlavors2(int[] cost, int money)
 		{
 			int[] sortedCost = cost.Clone() as int[];
 			Array.Sort(sortedCost);

@@ -49,7 +49,10 @@
     <Compile Include="Graph\GraphTopologicalSort.cs" />
     <Compile Include="Graph\GraphTopologicalSortNode.cs" />
     <Compile Include="Graph\GraphType.cs" />
+    <Compile Include="HackerRank\AbbreviationProblem.cs" />
+    <Compile Include="HackerRank\HackerLand.cs" />
     <Compile Include="HackerRank\IceCreamParlor.cs" />
+    <Compile Include="HackerRank\MaxArraySum.cs" />
     <Compile Include="Parens\Parens.cs" />
     <Compile Include="Permutation\Permutation.cs" />
     <Compile Include="QuickSort\QuickSortCCI.cs" />

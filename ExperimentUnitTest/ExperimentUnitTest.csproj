@@ -56,7 +56,10 @@
     <Compile Include="CCI_Moderate\CCI_Moderate_UnitTest.cs" />
     <Compile Include="ConsistentHashUnitTest.cs" />
     <Compile Include="Finbonacci\FibonacciUnitTest.cs" />
-    <Compile Include="HackerRank\HackerRankUnitTest.cs" />
+    <Compile Include="HackerRank\IceCreamParlorUnitTest.cs" />
+    <Compile Include="HackerRank\MaxArraySumUnitTest.cs" />
+    <Compile Include="HackerRank\HackerLandUnitTest.cs" />
+    <Compile Include="HackerRank\AbbreviationUnitTest.cs" />
     <Compile Include="Parens\ParensUnitTest.cs" />
     <Compile Include="Permutation\PermutationUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,13 +79,29 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HackerRank\Abbreviation_TestCase12.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\Abbreviation_TestCase12_ExpectedOutput.txt" />
+    <Content Include="HackerRank\HackerLand_TestCase3.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\HackerLand_TestCase4.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HackerRank\IceCreamParlor_TesCase0.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\IceCreamParlor_TesCase0b.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="HackerRank\IceCreamParlor_TesCase2.txt">
+    <Content Include="HackerRank\IceCreamParlor_TestCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sort\IceCreamParlor_TesCase2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\MaxArraySum_TestCase0.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
