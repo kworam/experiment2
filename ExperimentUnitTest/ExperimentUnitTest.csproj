@@ -60,6 +60,7 @@
     <Compile Include="HackerRank\MaxArraySumUnitTest.cs" />
     <Compile Include="HackerRank\HackerLandUnitTest.cs" />
     <Compile Include="HackerRank\AbbreviationUnitTest.cs" />
+    <Compile Include="HackerRank\PrimalityUnitTest.cs" />
     <Compile Include="Parens\ParensUnitTest.cs" />
     <Compile Include="Permutation\PermutationUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,6 +97,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\IceCreamParlor_TestCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\Primality_TestCase7.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Sort\IceCreamParlor_TesCase2.txt">
