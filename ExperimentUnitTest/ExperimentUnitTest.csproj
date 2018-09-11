@@ -61,6 +61,9 @@
     <Compile Include="HackerRank\HackerLandUnitTest.cs" />
     <Compile Include="HackerRank\AbbreviationUnitTest.cs" />
     <Compile Include="HackerRank\PrimalityUnitTest.cs" />
+    <Compile Include="HackerRank\MinimumBribeUnitTest.cs" />
+    <Compile Include="HackerRank\SherlockAndAnagramsUnitTest.cs" />
+    <Compile Include="HackerRank\CrosswordUnitTest.cs" />
     <Compile Include="Parens\ParensUnitTest.cs" />
     <Compile Include="Permutation\PermutationUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +87,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\Abbreviation_TestCase12_ExpectedOutput.txt" />
+    <Content Include="HackerRank\Crossword_TestCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\Crossword_TestCase2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\Crossword_TestCase5.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\Crossword_TestCase6.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HackerRank\HackerLand_TestCase3.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -99,7 +114,16 @@
     <Content Include="HackerRank\IceCreamParlor_TestCase0.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="HackerRank\MinimumBribe_SampleInput.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\MinimumBribe_TestCase2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HackerRank\Primality_TestCase7.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\SherlockAndAnagrams_TestCase0.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Sort\IceCreamParlor_TesCase2.txt">
