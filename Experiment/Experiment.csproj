@@ -54,6 +54,7 @@
     <Compile Include="HackerRank\HackerLand.cs" />
     <Compile Include="HackerRank\IceCreamParlor.cs" />
     <Compile Include="HackerRank\MaxArraySum.cs" />
+    <Compile Include="HackerRank\MaxFriendCircle.cs" />
     <Compile Include="HackerRank\MinimumBribeProblem.cs" />
     <Compile Include="HackerRank\Primality.cs" />
     <Compile Include="HackerRank\SherlockAndAnagramsProblem.cs" />
