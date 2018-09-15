@@ -65,6 +65,7 @@
     <Compile Include="HackerRank\SherlockAndAnagramsUnitTest.cs" />
     <Compile Include="HackerRank\CrosswordUnitTest.cs" />
     <Compile Include="HackerRank\MaxFriendCircleUnitTest.cs" />
+    <Compile Include="HackerRank\FraudAlertNotificationUnitTest.cs" />
     <Compile Include="Parens\ParensUnitTest.cs" />
     <Compile Include="Permutation\PermutationUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,6 +101,9 @@
     <Content Include="HackerRank\Crossword_TestCase6.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="HackerRank\FraudAlertNotification_TestCase1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HackerRank\HackerLand_TestCase3.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -110,6 +114,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\IceCreamParlor_TesCase0b.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\IceCreamParlor_TesCase2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\IceCreamParlor_TestCase0.txt">

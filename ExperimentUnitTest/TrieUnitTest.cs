@@ -9,7 +9,7 @@ namespace ExperimentUnitTest
     [TestClass]
     public class TrieUnitTest
     {
-        [TestMethod]
+        [TestCategory("Trie"), TestMethod]
         [ExpectedException(typeof(KeyNotFoundException))]
         public void GetFromEmptyTrie()
         {
@@ -18,7 +18,7 @@ namespace ExperimentUnitTest
             int value = trie.Get(key);
         }
 
-        [TestMethod]
+        [TestCategory("Trie"), TestMethod]
         public void InsertIntoTrie()
         {
             Trie trie = TrieFactory.Create();
@@ -28,7 +28,7 @@ namespace ExperimentUnitTest
             Assert.AreEqual(trie.Get(tuple.Item1), tuple.Item2);
         }
 
-        [TestMethod]
+        [TestCategory("Trie"), TestMethod]
         public void TraverseTriePreOrder()
         {
             Trie trie = TrieFactory.Create();

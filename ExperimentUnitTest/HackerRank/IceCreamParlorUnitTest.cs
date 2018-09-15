@@ -31,7 +31,8 @@ namespace ExperimentUnitTest.HackerRank
 		}
 
 		[TestCategory("IceCreamParlor"), TestMethod]
-		public void TestCaseTwo()
+        [Timeout(10000)]
+        public void TestCaseTwo()
 		{
 			using (StreamReader sr = new StreamReader(@"HackerRank\IceCreamParlor_TesCase2.txt"))
 			{

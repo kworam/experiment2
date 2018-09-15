@@ -51,6 +51,7 @@
     <Compile Include="Graph\GraphType.cs" />
     <Compile Include="HackerRank\AbbreviationProblem.cs" />
     <Compile Include="HackerRank\Crossword.cs" />
+    <Compile Include="HackerRank\FraudAlertNotification.cs" />
     <Compile Include="HackerRank\HackerLand.cs" />
     <Compile Include="HackerRank\IceCreamParlor.cs" />
     <Compile Include="HackerRank\MaxArraySum.cs" />

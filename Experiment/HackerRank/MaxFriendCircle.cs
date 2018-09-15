@@ -10,7 +10,6 @@ namespace ExperimentUnitTest.HackerRank
 			int maxFriendCircle = int.MinValue;
 			int[] maxes = new int[queries.Length];
 			Dictionary<int, UnionFindNode> people = new Dictionary<int, UnionFindNode>();
-			int j = 0;
 			for (int i = 0; i < queries.Length; i++)
 			{
 				UnionFindNode p1 = AddPerson(queries[i][0], people);
