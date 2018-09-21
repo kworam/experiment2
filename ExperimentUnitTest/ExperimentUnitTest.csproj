@@ -66,6 +66,7 @@
     <Compile Include="HackerRank\CrosswordUnitTest.cs" />
     <Compile Include="HackerRank\MaxFriendCircleUnitTest.cs" />
     <Compile Include="HackerRank\FraudAlertNotificationUnitTest.cs" />
+    <Compile Include="HackerRank\TripletSumUnitTest.cs" />
     <Compile Include="Parens\ParensUnitTest.cs" />
     <Compile Include="Permutation\PermutationUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,6 +100,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\Crossword_TestCase6.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\FraudAlertNotification_TestCase0.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\FraudAlertNotification_TestCase1.txt">
@@ -138,6 +142,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\SherlockAndAnagrams_TestCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\TripletSum_TestCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\TripletSum_TestCase1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\TripletSum_TestCase2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Sort\IceCreamParlor_TesCase2.txt">
