@@ -4,41 +4,46 @@ namespace Experiment
 {
 	public class QuickSortCCI
 	{
-		//public static void Sort(int[] a)
+		//public static int Partition(int[] a, int start, int end, QuickSortStatistics stats)
 		//{
-		//	if (a == null) return;
+		//	int pv = a[end];
 
-		//	SortInternal(a, 0, a.Length - 1);
-		//}
-
-		//private static void SortInternal(int[] a, int start, int end)
-		//{
-		//	if (end - start <= 0)
+		//	while (start < end)
 		//	{
-		//		return;
+		//		while (a[start] <= pv && start < end) start++;
+		//		while (a[end] > pv && end > start) end--;
+
+		//		if (start < end)
+		//		{
+		//			ArrayUtility.Swap(a, start, end);
+		//		}
 		//	}
 
-		//	int pi = Partition(a, start, end, null);
-		//	SortInternal(a, start, pi-1);
-		//	SortInternal(a, pi+1, end);
+		//	return start;
 		//}
 
-		public static int Partition(int[] a, int start, int end, QuickSortStatistics stats)
-		{
-			int pv = a[end];
+        public static int Partition(int[] a, int start, int end, QuickSortStatistics stats)
+        {
+            int pv = a[end];
 
-			while (start < end)
-			{
-				while (a[start] <= pv && start < end) start++;
-				while (a[end] > pv && end > start) end--;
+            int left = start - 1;
+            int right = end - 1;
+            while (left < right)
+            {
+                if (a[left+1] < pv)
+                {
+                    left++;
+                }
+                else
+                {
+                    ArrayUtility.Swap(a, left+1, right);
+                    right--;
+                }
+            }
+            left++;
+            ArrayUtility.Swap(a, left, end);
 
-				if (start < end)
-				{
-					ArrayUtility.Swap(a, start, end);
-				}
-			}
-
-			return start;
-		}
-	}
+            return left;
+        }
+    }
 }

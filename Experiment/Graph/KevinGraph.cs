@@ -40,20 +40,6 @@ namespace Experiment
 			InternalAddVertex(new KevinGraphVertex(this, uniqueKey));
 		}
 
-		//public void AddUndirectedEdge(string sourceUniqueKey, string targetUniqueKey, int weight)
-		//{
-		//    KevinGraphVertex source = GetVertexByUniqueKey(sourceUniqueKey) as KevinGraphVertex;
-		//    KevinGraphVertex target = GetVertexByUniqueKey(targetUniqueKey) as KevinGraphVertex;
-
-		//    InternalAddEdge(source, target, weight);
-		//    InternalAddEdge(target, source, weight);
-
-		//    //source.InDegree++;
-		//    source.OutDegree++;
-		//    target.InDegree++;
-		//    //target.OutDegree++;
-		//}
-
 		public void AddEdge(string sourceUniqueKey, string targetUniqueKey, int weight)
 		{
 			KevinGraphVertex source = GetVertexByUniqueKey(sourceUniqueKey) as KevinGraphVertex;
@@ -64,20 +50,6 @@ namespace Experiment
 			source.OutDegree++;
 			target.InDegree++;
 		}
-
-		//public void RemoveUndirectedEdge(string sourceUniqueKey, string targetUniqueKey)
-		//{
-		//    KevinGraphVertex source = GetVertexByUniqueKey(sourceUniqueKey) as KevinGraphVertex;
-		//    KevinGraphVertex target = GetVertexByUniqueKey(targetUniqueKey) as KevinGraphVertex;
-
-		//    InternalRemoveEdge(source, target);
-		//    InternalRemoveEdge(target, source);
-
-		//    source.InDegree--;
-		//    source.OutDegree--;
-		//    target.InDegree--;
-		//    target.OutDegree--;
-		//}
 
 		public void RemoveEdge(string sourceUniqueKey, string targetUniqueKey)
 		{

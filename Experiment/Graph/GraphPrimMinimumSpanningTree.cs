@@ -27,6 +27,7 @@ namespace Experiment
 			while (remainingVertices.Count() > 0)
 			{
                 // Get the vertex with the lowest code to add to the MST
+                // The first vertex is chosen arbitrarily because all vertices start with max cost.
 				PriorityQueueNode currentNode = remainingVertices.Dequeue();
 				GraphVertex currentVertex = currentNode.Data as GraphVertex;
 
