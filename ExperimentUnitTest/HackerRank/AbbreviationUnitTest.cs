@@ -12,20 +12,25 @@ namespace ExperimentUnitTest.HackerRank
 		public void TestCase12()
 		{
 			using (StreamReader sr = new StreamReader(@"HackerRank\Abbreviation_TestCase12.txt"))
-			{
-				int q = Convert.ToInt32(sr.ReadLine());
+            {
+                DoTest(sr);
+            }
+        }
 
-				for (int qItr = 0; qItr < q; qItr++)
-				{
-					string a = sr.ReadLine();
+        private static void DoTest(StreamReader sr)
+        {
+            int q = Convert.ToInt32(sr.ReadLine());
 
-					string b = sr.ReadLine();
+            for (int qItr = 0; qItr < q; qItr++)
+            {
+                string a = sr.ReadLine();
 
-					string result = AbbreviationProblem.Abbreviation(a, b);
+                string b = sr.ReadLine();
 
-					Console.WriteLine(result);
-				}
-			}
-		}
-	}
+                string result = AbbreviationProblem.Abbreviation(a, b);
+
+                Console.WriteLine(result);
+            }
+        }
+    }
 }

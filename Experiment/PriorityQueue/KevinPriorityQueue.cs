@@ -65,7 +65,7 @@ namespace Experiment
 
 			AttachNodeAtIndex(last, topIndex);
 
-			SiftDown(0);
+			SiftDown(topIndex);
 
 		    return min;
 		}

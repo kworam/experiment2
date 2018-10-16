@@ -55,6 +55,7 @@
     <Compile Include="CCI_Hard\CCI_Hard_UnitTest.cs" />
     <Compile Include="CCI_Moderate\CCI_Moderate_UnitTest.cs" />
     <Compile Include="ConsistentHashUnitTest.cs" />
+    <Compile Include="Dictionary\DictionaryUnitTest.cs" />
     <Compile Include="Finbonacci\FibonacciUnitTest.cs" />
     <Compile Include="HackerRank\IceCreamParlorUnitTest.cs" />
     <Compile Include="HackerRank\MaxArraySumUnitTest.cs" />
@@ -67,8 +68,22 @@
     <Compile Include="HackerRank\MaxFriendCircleUnitTest.cs" />
     <Compile Include="HackerRank\FraudAlertNotificationUnitTest.cs" />
     <Compile Include="HackerRank\TripletSumUnitTest.cs" />
+    <Compile Include="HackerRank\DecibinaryUnitTest.cs" />
+    <Compile Include="HackerRank\MinMaxRiddleUnitTest.cs" />
+    <Compile Include="HackerRank\MiniMaxSumUnitTest.cs" />
+    <Compile Include="HackerRank\CastleOnTheGridUnitTest.cs" />
+    <Compile Include="HackerRank\ConnectedCellInAGridUnitTest.cs" />
+    <Compile Include="HackerRank\MaximumXorUnitTest.cs" />
+    <Compile Include="HackerRank\ArrayManipulationUnitTest.cs" />
+    <Compile Include="HackerRank\CountInversionsUnitTest.cs" />
+    <Compile Include="HackerRank\CommonChildUnitTest.cs" />
+    <Compile Include="HackerRank\ReverseShuffleMergeUnitTest.cs" />
+    <Compile Include="HackerRank\MinTimeUnitTest.cs" />
+    <Compile Include="HackerRank\MatrixUnitTest.cs" />
     <Compile Include="Parens\ParensUnitTest.cs" />
+    <Compile Include="Permutation\HeapAlgorithmUnitTest.cs" />
     <Compile Include="Permutation\PermutationUnitTest.cs" />
+    <Compile Include="Permutation\DistinctPermsUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MinHeapUnitTest.cs" />
     <Compile Include="HeapSortUnitTest.cs" />
@@ -90,6 +105,39 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\Abbreviation_TestCase12_ExpectedOutput.txt" />
+    <Content Include="HackerRank\ArrayManipulation_SampleTestCase.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\ArrayManipulation_Testcase1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\ArrayManipulation_Testcase1b.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\CastleOnTheGrid_Sample0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\CastleOnTheGrid_Sample1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\CastleOnTheGrid_TestCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\CastleOnTheGrid_TestCase1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\CommonChild_Sample0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\CommonChild_TestCase1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\ConnectedCellInGrid_TestCase2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\CountInversions_TestCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HackerRank\Crossword_TestCase0.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -100,6 +148,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\Crossword_TestCase6.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\Decibinary_DiscussionTest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\Decibinary_TestCase3.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\FraudAlertNotification_TestCase0.txt">
@@ -126,16 +180,46 @@
     <Content Include="HackerRank\IceCreamParlor_TestCase0.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="HackerRank\Matrix_TestCase2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\Matrix_TestCase_Sample0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HackerRank\MaxFriendCircle_TestCase0.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\MaxFriendCircle_TestCase2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="HackerRank\MaximumXor_Testcase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\MaximumXor_Testcase2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HackerRank\MinimumBribe_SampleInput.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\MinimumBribe_TestCase2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\MinTime_TestCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\MinTime_TestCase11.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\MinTime_TestCase2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\MinTime_TestCase2a.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\MinTime_TestCase5.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\MinTime_TestCase6.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\Primality_TestCase7.txt">

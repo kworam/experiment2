@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Experiment
 {
@@ -62,5 +63,18 @@ namespace Experiment
 
 			return result;
 	    }
+
+        public static int[] GetDistinct(int[] array)
+        {
+            HashSet<int> set = new HashSet<int>(array);
+            return set.ToArray();
+        }
+
+        public static int[] GetSortedDistinct(int[] array)
+        {
+            int[] distinct = GetDistinct(array);
+            Array.Sort(distinct);
+            return distinct;
+        }
     }
 }

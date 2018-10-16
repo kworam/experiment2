@@ -12,15 +12,20 @@ namespace ExperimentUnitTest.HackerRank
 		public void TestCase7()
 		{
 			using (StreamReader sr = new StreamReader(@"HackerRank\Primality_TestCase7.txt"))
-			{
-				int p = Convert.ToInt32(sr.ReadLine());
+            {
+                DoTest(sr);
+            }
+        }
 
-				for (int tItr = 0; tItr < p; tItr++)
-				{
-					int n = Convert.ToInt32(sr.ReadLine());
-					Console.WriteLine(Primality.primality(n));
-				}
-			}
-		}
-	}
+        private static void DoTest(StreamReader sr)
+        {
+            int p = Convert.ToInt32(sr.ReadLine());
+
+            for (int tItr = 0; tItr < p; tItr++)
+            {
+                int n = Convert.ToInt32(sr.ReadLine());
+                Console.WriteLine(Primality.primality(n));
+            }
+        }
+    }
 }
