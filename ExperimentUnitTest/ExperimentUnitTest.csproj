@@ -80,10 +80,13 @@
     <Compile Include="HackerRank\ReverseShuffleMergeUnitTest.cs" />
     <Compile Include="HackerRank\MinTimeUnitTest.cs" />
     <Compile Include="HackerRank\MatrixUnitTest.cs" />
+    <Compile Include="Matrix\MatrixRotationUnitTest.cs" />
     <Compile Include="Parens\ParensUnitTest.cs" />
     <Compile Include="Permutation\HeapAlgorithmUnitTest.cs" />
     <Compile Include="Permutation\PermutationUnitTest.cs" />
     <Compile Include="Permutation\DistinctPermsUnitTest.cs" />
+    <Compile Include="Permutation\RankUnrankPermUnitTest.cs" />
+    <Compile Include="PreviousInterviewQuestions\Compute24UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MinHeapUnitTest.cs" />
     <Compile Include="HeapSortUnitTest.cs" />
@@ -92,6 +95,7 @@
     <Compile Include="GraphUnitTest.cs" />
     <Compile Include="Search\SearchUnitTest.cs" />
     <Compile Include="Sort\SortUnitTest.cs" />
+    <Compile Include="String\FindSubstringHashUnitTest.cs" />
     <Compile Include="TrieUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>

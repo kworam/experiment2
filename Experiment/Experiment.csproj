@@ -77,13 +77,17 @@
     <Compile Include="HackerRank\ReverseShuffleMerge.cs" />
     <Compile Include="HackerRank\SherlockAndAnagramsProblem.cs" />
     <Compile Include="HackerRank\TripletSum.cs" />
+    <Compile Include="Matrix\MatrixRotation.cs" />
     <Compile Include="Parens\Parens.cs" />
     <Compile Include="Permutation\HeapAlgorithm.cs" />
     <Compile Include="Permutation\DistinctPerms.cs" />
     <Compile Include="Permutation\Permutation.cs" />
+    <Compile Include="Permutation\RankUnrank.cs" />
+    <Compile Include="PreviousInterviewQuestions\Compute24.cs" />
     <Compile Include="QuickSort\QuickSortCCI.cs" />
     <Compile Include="Search\SearchInSortedRotatedArray.cs" />
     <Compile Include="Sort\Sort.cs" />
+    <Compile Include="String\FindSubstringHash.cs" />
     <Compile Include="Trie\KevinTrie.cs" />
     <Compile Include="Trie\TraversalType.cs" />
     <Compile Include="Trie\Trie.cs" />
@@ -122,6 +126,7 @@
     <Compile Include="QuickSort\QuickSortClassicPartition.cs" />
     <Compile Include="QuickSort\QuickSortKevinPartition.cs" />
     <Compile Include="QuickSort\QuickSortStatistics.cs" />
+    <Compile Include="Utility\KevinMath.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

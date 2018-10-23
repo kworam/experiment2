@@ -64,7 +64,7 @@ namespace ExperimentUnitTest
 
             public override string ToString()
             {
-                return String.Join(" ", values);
+                return string.Join(" ", values);
             }
         }
     }

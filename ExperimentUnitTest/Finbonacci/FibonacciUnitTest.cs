@@ -40,7 +40,7 @@ namespace ExperimentUnitTest.Finbonacci
             {
                 values.Add(Fibonacci.Get(i));
             }
-            Console.WriteLine(String.Join(" ", values));
+            Console.WriteLine(string.Join(" ", values));
         }
 
         //http://www.javascripter.net/math/calculators/fibonaccinumberscalculator.htm

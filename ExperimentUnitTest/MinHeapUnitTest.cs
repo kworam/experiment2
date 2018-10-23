@@ -69,7 +69,7 @@ namespace ExperimentUnitTest
                 Assert.AreEqual(minHeap.GetCount(), expectedCount);
 
                 Console.WriteLine("binHeap:");
-                Console.WriteLine(String.Join(" ", minHeap.ToString()));
+                Console.WriteLine(string.Join(" ", minHeap.ToString()));
 
 
                 for (int i = 0; i < inputArray.Length; i++)
@@ -86,9 +86,9 @@ namespace ExperimentUnitTest
 		    catch (Exception)
 		    {
                 Console.WriteLine("inputArray:");
-                Console.WriteLine(String.Join(" ", inputArray));
+                Console.WriteLine(string.Join(" ", inputArray));
                 Console.WriteLine("expectedArray:");
-                Console.WriteLine(String.Join(" ", expectedArray));
+                Console.WriteLine(string.Join(" ", expectedArray));
                 Console.WriteLine("popped values:");
 		        Console.WriteLine(string.Join(" ", poppedValues));
                 Console.WriteLine("minHeap:");
@@ -126,7 +126,7 @@ namespace ExperimentUnitTest
 				Assert.AreEqual(minHeap.GetCount(), expectedCount);
 
 				Console.WriteLine("binHeap:");
-				Console.WriteLine(String.Join(" ", minHeap.ToString()));
+				Console.WriteLine(string.Join(" ", minHeap.ToString()));
 
 
 				for (int i = 0; i < expectedArray.Length; i++)
@@ -143,7 +143,7 @@ namespace ExperimentUnitTest
 			catch (Exception)
 			{
 				Console.WriteLine("expectedArray:");
-				Console.WriteLine(String.Join(" ", expectedArray));
+				Console.WriteLine(string.Join(" ", expectedArray));
 				Console.WriteLine("popped values:");
 				Console.WriteLine(string.Join(" ", poppedValues));
 				Console.WriteLine("minHeap:");

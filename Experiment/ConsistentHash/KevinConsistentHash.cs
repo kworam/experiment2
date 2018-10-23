@@ -135,7 +135,7 @@ namespace Experiment
         {
             if (serverIdToServerMap.Count == this.maxNumServers)
             {
-                throw new ArgumentException(String.Format(
+                throw new ArgumentException(string.Format(
                     "Cannot add server {0}, the collection already contains the maximum number of servers which is {1}."
                     , serverId,
                     this.maxNumServers));
@@ -143,7 +143,7 @@ namespace Experiment
 
             if (serverIdToServerMap.ContainsKey(serverId))
             {
-                throw new ArgumentException(String.Format("Server Id {0} already in collection.", serverId));
+                throw new ArgumentException(string.Format("Server Id {0} already in collection.", serverId));
             }
 
             Server server = new Server(serverId);
@@ -155,7 +155,7 @@ namespace Experiment
         {
             if (!serverIdToServerMap.ContainsKey(serverId))
             {
-                throw new ArgumentException(String.Format("Server Id {0} not found in collection.", serverId));
+                throw new ArgumentException(string.Format("Server Id {0} not found in collection.", serverId));
             }
 
             Server server = serverIdToServerMap[serverId];
