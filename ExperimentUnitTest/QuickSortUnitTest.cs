@@ -21,7 +21,7 @@ namespace ExperimentUnitTest
             int[] a = new int[0];
             int[] expectedOutput = a.Clone() as int[];
             QuickSort.Sort(a, QuickSortCCI.Partition);
-            Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+            Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(a, expectedOutput));
         }
 
         [TestCategory("QuickSort"), TestMethod]
@@ -30,7 +30,7 @@ namespace ExperimentUnitTest
             int[] a = new int[] { 88 };
             int[] expectedOutput = a.Clone() as int[];
             QuickSort.Sort(a, QuickSortCCI.Partition);
-            Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+            Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(a, expectedOutput));
         }
 
 
@@ -40,7 +40,7 @@ namespace ExperimentUnitTest
 			int[] a = new int[] { 1, 1, 1 };
 			int[] expectedOutput = a.Clone() as int[];
 			QuickSort.Sort(a, QuickSortCCI.Partition);
-			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+			Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(a, expectedOutput));
 		}
 
 		[TestCategory("QuickSort"), TestMethod]
@@ -49,7 +49,7 @@ namespace ExperimentUnitTest
 			int[] a = new int[] { 1, 1, 1, 1 };
 			int[] expectedOutput = a.Clone() as int[];
 			QuickSort.Sort(a, QuickSortCCI.Partition);
-			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+			Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(a, expectedOutput));
 		}
 
 		[TestCategory("QuickSort"), TestMethod]
@@ -59,7 +59,7 @@ namespace ExperimentUnitTest
 			int[] expectedOutput = a.Clone() as int[];
 			Array.Sort(expectedOutput);
 			QuickSort.Sort(a, QuickSortCCI.Partition);
-			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+			Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(a, expectedOutput));
 		}
 
 		[TestCategory("QuickSort"), TestMethod]
@@ -69,7 +69,7 @@ namespace ExperimentUnitTest
 			int[] expectedOutput = a.Clone() as int[];
 			Array.Sort(expectedOutput);
 			QuickSort.Sort(a, QuickSortCCI.Partition);
-			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+			Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(a, expectedOutput));
 		}
 
 		[TestCategory("QuickSort"), TestMethod]
@@ -79,7 +79,7 @@ namespace ExperimentUnitTest
 			int[] expectedOutput = a.Clone() as int[];
 			Array.Sort(expectedOutput);
 			QuickSort.Sort(a, QuickSortCCI.Partition);
-			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+			Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(a, expectedOutput));
 		}
 
 		[TestCategory("QuickSort"), TestMethod]
@@ -89,7 +89,7 @@ namespace ExperimentUnitTest
 			int[] expectedOutput = a.Clone() as int[];
 			Array.Sort(expectedOutput);
 			QuickSort.Sort(a, QuickSortCCI.Partition);
-			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+			Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(a, expectedOutput));
 		}
 
 		[TestCategory("QuickSort"), TestMethod]
@@ -99,7 +99,7 @@ namespace ExperimentUnitTest
 			int[] expectedOutput = a.Clone() as int[];
 			Array.Sort(expectedOutput);
 			QuickSort.Sort(a, QuickSortCCI.Partition);
-			Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+			Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(a, expectedOutput));
 		}
 
 		[TestCategory("QuickSort"), TestMethod]
@@ -112,7 +112,7 @@ namespace ExperimentUnitTest
             Array.Sort(expectedArray);
 
             QuickSort.Sort(inputArray, QuickSortCCI.Partition);
-            Assert.IsTrue(ArrayUtility.AreArraysEqual(inputArray, expectedArray));
+            Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(inputArray, expectedArray));
         }
 
 		[TestCategory("QuickSort"), TestMethod]

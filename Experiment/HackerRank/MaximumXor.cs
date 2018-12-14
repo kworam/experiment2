@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Experiment.Utility;
 
 namespace Experiment.HackerRank
 {
@@ -29,17 +30,17 @@ namespace Experiment.HackerRank
             }
 
             TrieNode next;
-            bool qbit = GetBit(q, bitpos);
+            bool qbit = BitOperations.GetBit(q, bitpos);
             if (qbit)
             {
                 if (index.children.ContainsKey(false))
                 {
-                    bestValue = ClearBit(bestValue, bitpos);
+                    BitOperations.ClearBit(ref bestValue, bitpos);
                     next = index.children[false];
                 }
                 else
                 {
-                    bestValue = SetBit(bestValue, bitpos);
+                    BitOperations.SetBit(ref bestValue, bitpos);
                     next = index.children[true];
                 }
             }
@@ -47,12 +48,12 @@ namespace Experiment.HackerRank
             {
                 if (index.children.ContainsKey(true))
                 {
-                    bestValue = SetBit(bestValue, bitpos);
+                    BitOperations.SetBit(ref bestValue, bitpos);
                     next = index.children[true];
                 }
                 else
                 {
-                    bestValue = ClearBit(bestValue, bitpos);
+                    BitOperations.ClearBit(ref bestValue, bitpos);
                     next = index.children[false];
                 }
             }
@@ -76,19 +77,13 @@ namespace Experiment.HackerRank
                     return;
                 }
 
-                bool bit = GetBit(n, bitpos);
+                bool bit = BitOperations.GetBit(n, bitpos);
                 if (!children.ContainsKey(bit))
                 {
                     children[bit] = new TrieNode();
                 }
                 children[bit].Insert(n, bitpos - 1);
             }
-        }
-
-        private static bool GetBit(int n, int bitpos)
-        {
-            int mask = 1 << bitpos;
-            return (n & mask) != 0;
         }
 
         private static TrieNode BuildTrie(int[] arr)
@@ -100,18 +95,5 @@ namespace Experiment.HackerRank
             }
             return root;
         }
-
-        private static int ClearBit(int n, int bitpos)
-        {
-            int mask = ~(1 << bitpos);
-            return n & mask;
-        }
-
-        private static int SetBit(int n, int bitpos)
-        {
-            int mask = 1 << bitpos;
-            return n | mask;
-        }
-
     }
 }

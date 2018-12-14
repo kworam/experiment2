@@ -6,7 +6,7 @@ namespace Experiment
 {
     public static class ArrayUtility
     {
-        public static bool AreArraysEqual(int[] a, int[] b)
+        public static bool AreIntegerEnumerablesEqual(IEnumerable<int> a, IEnumerable<int> b)
         {
             if (a == null && b == null)
             {
@@ -19,14 +19,19 @@ namespace Experiment
             }
 
             // both arrays are non-empty
-            if (a.Length != b.Length)
+            if (a.Count() != b.Count())
             {
                 return false;
             }
 
-            for (int i = 0; i < a.Length; i++)
+            IEnumerator<int> aEnum = a.GetEnumerator();
+            IEnumerator<int> bEnum = b.GetEnumerator();
+            for (int i = 0; i < a.Count(); i++)
             {
-                if (a[i] != b[i])
+                aEnum.MoveNext();
+                bEnum.MoveNext();
+
+                if (aEnum.Current != bEnum.Current)
                 {
                     return false;
                 }

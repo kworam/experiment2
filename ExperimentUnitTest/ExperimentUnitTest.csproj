@@ -52,8 +52,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AlgorithmDesignManual\LongestIncreasingSequenceUnitTest.cs" />
+    <Compile Include="CartesianTree\CartesianTreeUnitTest.cs" />
     <Compile Include="CCI_Hard\CCI_Hard_UnitTest.cs" />
     <Compile Include="CCI_Moderate\CCI_Moderate_UnitTest.cs" />
+    <Compile Include="CCI_Moderate\UnitTest1.cs" />
     <Compile Include="ConsistentHashUnitTest.cs" />
     <Compile Include="Dictionary\DictionaryUnitTest.cs" />
     <Compile Include="Finbonacci\FibonacciUnitTest.cs" />
@@ -80,6 +83,12 @@
     <Compile Include="HackerRank\ReverseShuffleMergeUnitTest.cs" />
     <Compile Include="HackerRank\MinTimeUnitTest.cs" />
     <Compile Include="HackerRank\MatrixUnitTest.cs" />
+    <Compile Include="HackerRank\PoisonousPlantsUnitTest.cs" />
+    <Compile Include="HackerRank\MagicSquareUnitTest.cs" />
+    <Compile Include="HackerRank\StringConstructionUnitTest.cs" />
+    <Compile Include="HackerRank\ClimbingLeaderboardUnitTest.cs" />
+    <Compile Include="HackerRank\NonDivisibleSubsetUnitTest.cs" />
+    <Compile Include="HackerRank\QueensAttack2UnitTest.cs" />
     <Compile Include="Matrix\MatrixRotationUnitTest.cs" />
     <Compile Include="Parens\ParensUnitTest.cs" />
     <Compile Include="Permutation\HeapAlgorithmUnitTest.cs" />
@@ -87,12 +96,15 @@
     <Compile Include="Permutation\DistinctPermsUnitTest.cs" />
     <Compile Include="Permutation\RankUnrankPermUnitTest.cs" />
     <Compile Include="PreviousInterviewQuestions\Compute24UnitTest.cs" />
+    <Compile Include="PreviousInterviewQuestions\PrintDiamondUnitTest.cs" />
+    <Compile Include="PreviousInterviewQuestions\SingleDigitOperandsAddSubMultDivUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MinHeapUnitTest.cs" />
     <Compile Include="HeapSortUnitTest.cs" />
     <Compile Include="QuickSortUnitTest.cs" />
     <Compile Include="PriorityQueueUnitTest.cs" />
     <Compile Include="GraphUnitTest.cs" />
+    <Compile Include="RedBlackTree\RedBlackTreeUnitTest.cs" />
     <Compile Include="Search\SearchUnitTest.cs" />
     <Compile Include="Sort\SortUnitTest.cs" />
     <Compile Include="String\FindSubstringHashUnitTest.cs" />
@@ -128,6 +140,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\CastleOnTheGrid_TestCase1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\ClimbingLeaderboard_SampleTest0.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\CommonChild_Sample0.txt">
@@ -178,6 +193,9 @@
     <Content Include="HackerRank\IceCreamParlor_TestCase2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="HackerRank\MagicSquare_SampleTestCase1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HackerRank\Matrix_TestCase2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -220,10 +238,40 @@
     <Content Include="HackerRank\MinTime_TestCase6.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="HackerRank\NonDivisibleSubset_SampleTestCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\NonDivisibleSubset_SampleTestCase1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\NonDivisibleSubset_TestCase6.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\NonDivisibleSubset_TestCase7.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\PoisonousPlants_SampleInput1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\PoisonousPlants_TestCase2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HackerRank\Primality_TestCase7.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="HackerRank\QueensAttack2_SampleTestCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\QueensAttack2_SampleTestCase1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\QueensAttack2_TestCase6.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HackerRank\SherlockAndAnagrams_TestCase0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HackerRank\StringConstruction_TestCase1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HackerRank\TripletSum_TestCase0.txt">
@@ -242,6 +290,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

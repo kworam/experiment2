@@ -89,5 +89,25 @@ namespace ExperimentUnitTest.Parens
 			Experiment.Parens.Parens.ParensResult parens2 = Experiment.Parens.Parens.GenerateParens2Count(5);
 			Assert.AreEqual(parens2.list.Count, 42);
 		}
-	}
+
+        [TestCategory("Parens"), TestMethod]
+        public void Eight()
+        {
+            Experiment.Parens.Parens.ParensResult parens = Experiment.Parens.Parens.GenerateParens(8);
+            //Assert.AreEqual(parens.list.Count, 42);
+
+            Experiment.Parens.Parens.ParensResult parens2 = Experiment.Parens.Parens.GenerateParens2Count(8);
+            //Assert.AreEqual(parens2.list.Count, 42);
+        }
+
+        [TestCategory("Parens"), TestMethod]
+        public void Ten()
+        {
+            Experiment.Parens.Parens.ParensResult parens = Experiment.Parens.Parens.GenerateParens(10);
+            //Assert.AreEqual(parens.list.Count, 42);
+
+            Experiment.Parens.Parens.ParensResult parens2 = Experiment.Parens.Parens.GenerateParens2Count(10);
+            //Assert.AreEqual(parens2.list.Count, 42);
+        }
+    }
 }

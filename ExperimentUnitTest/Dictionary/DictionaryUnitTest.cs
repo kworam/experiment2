@@ -44,7 +44,7 @@ namespace ExperimentUnitTest.Dictionary
 
             int[] keysFromDictionary = kd.Keys.ToArray();
             int[] sdk = ArrayUtility.GetSortedDistinct(keysFromDictionary);
-            Assert.IsTrue(ArrayUtility.AreArraysEqual(originalKeys.Values.ToArray(), sdk)); 
+            Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(originalKeys.Values.ToArray(), sdk)); 
 
             for (int i=0; i<sortedDistinct.Length; i++)
             {
@@ -54,7 +54,7 @@ namespace ExperimentUnitTest.Dictionary
                 keysFromDictionary = kd.Keys.ToArray();
                 sdk = ArrayUtility.GetSortedDistinct(keysFromDictionary);
 
-                Assert.IsTrue(ArrayUtility.AreArraysEqual(originalKeys.Values.ToArray(), sdk));
+                Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(originalKeys.Values.ToArray(), sdk));
             }
         }
     }

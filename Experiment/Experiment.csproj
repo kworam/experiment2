@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlgorithmDesignManual\LongestIncreasingSequence.cs" />
+    <Compile Include="CartesianTree\CartesianTree.cs" />
     <Compile Include="CCI_Hard\AddWithoutArithmeticOperators.cs" />
     <Compile Include="CCI_Moderate\NumberSwap.cs" />
     <Compile Include="Dictionary\DictionaryKeyNotFoundException.cs" />
@@ -55,6 +57,7 @@
     <Compile Include="HackerRank\AbbreviationProblem.cs" />
     <Compile Include="HackerRank\CastleOnTheGrid.cs" />
     <Compile Include="HackerRank\ArrayManipulation.cs" />
+    <Compile Include="HackerRank\ClimbingLeaderboard.cs" />
     <Compile Include="HackerRank\CommonChild.cs" />
     <Compile Include="HackerRank\ConnectedCellInAGrid.cs" />
     <Compile Include="HackerRank\CountInversions.cs" />
@@ -63,6 +66,7 @@
     <Compile Include="HackerRank\FraudAlertNotification.cs" />
     <Compile Include="HackerRank\HackerLand.cs" />
     <Compile Include="HackerRank\IceCreamParlor.cs" />
+    <Compile Include="HackerRank\MagicSquare.cs" />
     <Compile Include="HackerRank\Matrix.cs" />
     <Compile Include="HackerRank\Matrix2.cs" />
     <Compile Include="HackerRank\Matrix3.cs" />
@@ -73,9 +77,13 @@
     <Compile Include="HackerRank\MinimumBribeProblem.cs" />
     <Compile Include="HackerRank\MinMaxRiddle.cs" />
     <Compile Include="HackerRank\MinTime.cs" />
+    <Compile Include="HackerRank\NonDivisibleSubset.cs" />
+    <Compile Include="HackerRank\PoisonousPlants.cs" />
     <Compile Include="HackerRank\Primality.cs" />
+    <Compile Include="HackerRank\QueensAttack2.cs" />
     <Compile Include="HackerRank\ReverseShuffleMerge.cs" />
     <Compile Include="HackerRank\SherlockAndAnagramsProblem.cs" />
+    <Compile Include="HackerRank\StringConstruction.cs" />
     <Compile Include="HackerRank\TripletSum.cs" />
     <Compile Include="Matrix\MatrixRotation.cs" />
     <Compile Include="Parens\Parens.cs" />
@@ -84,7 +92,10 @@
     <Compile Include="Permutation\Permutation.cs" />
     <Compile Include="Permutation\RankUnrank.cs" />
     <Compile Include="PreviousInterviewQuestions\Compute24.cs" />
+    <Compile Include="PreviousInterviewQuestions\PrintDiamond.cs" />
+    <Compile Include="PreviousInterviewQuestions\SingleDigitOperandsAddSubMultDiv.cs" />
     <Compile Include="QuickSort\QuickSortCCI.cs" />
+    <Compile Include="RedBlackTree\RedBlackTree.cs" />
     <Compile Include="Search\SearchInSortedRotatedArray.cs" />
     <Compile Include="Sort\Sort.cs" />
     <Compile Include="String\FindSubstringHash.cs" />
@@ -104,6 +115,7 @@
     <Compile Include="Graph\GraphUniqueVertexNameViolationException.cs" />
     <Compile Include="Graph\GraphVertex.cs" />
     <Compile Include="Graph\GraphVisitor.cs" />
+    <Compile Include="Utility\BitOperations.cs" />
     <Compile Include="Utility\HasUniqueKey.cs" />
     <Compile Include="Heap\HeapEmptyException.cs" />
     <Compile Include="Heap\HeapFactory.cs" />

@@ -21,7 +21,7 @@ namespace ExperimentUnitTest
             int[] a = new int[0];
             int[] expectedOutput = a.Clone() as int[];
             HeapSort.Sort(a);
-            Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+            Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(a, expectedOutput));
         }
 
         [TestCategory("HeapSort"), TestMethod]
@@ -30,7 +30,7 @@ namespace ExperimentUnitTest
             int[] a = new int[] { 88 };
             int[] expectedOutput = a.Clone() as int[];
             HeapSort.Sort(a);
-            Assert.IsTrue(ArrayUtility.AreArraysEqual(a, expectedOutput));
+            Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(a, expectedOutput));
         }
 
 
@@ -44,7 +44,7 @@ namespace ExperimentUnitTest
             Array.Sort(expectedArray);
 
             HeapSort.Sort(inputArray);
-            Assert.IsTrue(ArrayUtility.AreArraysEqual(inputArray, expectedArray));
+            Assert.IsTrue(ArrayUtility.AreIntegerEnumerablesEqual(inputArray, expectedArray));
         }
     }
 }

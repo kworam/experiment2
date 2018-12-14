@@ -13,6 +13,11 @@ namespace Experiment.HackerRank
             while (true)
             {
                 List<long> repsForN = generateAllDbReps(n);
+                HashSet<long> set = new HashSet<long>(repsForN);
+                //if (set.Count != repsForN.Count)
+                //{
+                //    throw new Exception("Duplicates Found");
+                //}
                 if (idx >= count && idx < count + repsForN.Count)
                 {
                     return repsForN[(int)(idx - count)];
@@ -33,7 +38,7 @@ namespace Experiment.HackerRank
 
             int place = (int)Math.Floor(Math.Log(n, 2));
             long dbNum = 0;
-            internalGenerateAllDbReps(n, place, dbNum, result);
+            internalGenerateAllDbReps(n, place+1, dbNum, result);
             return result;
         }
 
