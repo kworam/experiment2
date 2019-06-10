@@ -124,7 +124,7 @@ namespace Experiment
 		private void SiftUp(List<int> heap, int index)
 		{
 			int parentIndex = GetParentIndex(index);
-			if (heap[index] < heap[parentIndex])
+			if (parentIndex >= 0 && heap[index] < heap[parentIndex])
 			{
 				ArrayUtility.Swap(heap, index, parentIndex);
 				SiftUp(heap, parentIndex);
